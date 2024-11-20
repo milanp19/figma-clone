@@ -1,0 +1,3 @@
+- fabric: html canvas interaction framework
+- uuid: for providing unique ids
+- liveblocks: for adding collaborative experience
