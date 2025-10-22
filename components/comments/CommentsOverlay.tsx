@@ -28,7 +28,7 @@ export const CommentsOverlay = () => {
   return (
     <div>
       {threads
-        .filter((thread) => !thread.metadata.resolved)
+        .filter((thread) => !(thread.metadata as any).resolved)
         .map((thread) => (
           <OverlayThread key={thread.id} thread={thread} maxZIndex={maxZIndex} />
         ))}
