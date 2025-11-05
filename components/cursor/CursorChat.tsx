@@ -23,7 +23,7 @@ const CursorChat = ({
     if (e.key === "Enter") {
       setCursorState({
         mode: CursorMode.Chat,
-        previousMessage: cursorState.message,
+        previousMessage: cursorState.mode === CursorMode.Chat ? cursorState.message : null,
         message: "",
       });
     } else if (e.key === "Escape") {
